@@ -2,7 +2,7 @@
 
 body {
 	font-family: 'Noto Sans TC', sans-serif;
-	font-size: 18px;
+	font-size: 14px;
 	margin: 0px;
 	padding: 0px;
 }
@@ -21,9 +21,31 @@ h2 {
 	color: #000000;
 }
 
+h3 {
+	font-family: 'Helvetica Neue';
+	font-size: 25px;
+	text-align: center;
+	padding: 30px;
+	color: #FFFFFF;
+}
+
+h4 {
+	font-family: 'Helvetica Neue';
+	font-size: 30px;
+	text-align: left;
+	padding: 20px;
+	color: #000000;
+	margin: 0;
+}
+
+h5 {
+	font-family: 'Helvetica Neue';
+	font-size: 16px;
+}
+
 header {
 	height: 100px;
-	background-color:#000000;
+	background-color: #ff5d0e;
 	display: flex; 
   	flex-direction: column; 
   	justify-content: center; 
@@ -34,7 +56,7 @@ float: left;
 font-size:25px;
 display: inline-block;
 justify-content: center; 
-height:100px;
+height:20px;
   }
 
 nav ul {
@@ -44,7 +66,9 @@ nav ul {
 
 nav {
 	width: 100%;
+	height: 220px;
 	background-image: url(image-1.jpg);
+	border-bottom: ridge #ff5d0e;
 }
 
 nav:hover {
@@ -57,12 +81,20 @@ nav a {
 	padding: 20px 30px;
 }
 
+nav a:hoover {
+	color: #000000;
+	padding: 20px 30px;
+}
 
 footer {
-	height: 80px;
+	position: fixed;
+    left: 0px;
+    bottom: 0px;
+    width: 100%;
+	height: 60px;
 	color: blue;
-	background-color: #000000;
-	padding-top: 30px;
+	background-color: #ff5d0e;
+	padding-top: 15px;
 	border-top: 2px; 
 	border-color: #F68121;
 	text-align: center;
@@ -74,14 +106,28 @@ hover color: #FFFFFF;
 text-decoration: none;
 }
 
+.link-menu {
+color: #FFFFFF;
+hover color: #666666;
+text-decoration: none;
+}
+
 .menu {
 display: table;
 margin: 0 auto;
+padding-bottom: 0px;
 }
 
 #bandeannonce {
-height: 500px;
-background-color : #F68121;
+min-height: 550px;
+background-color : #FFFCF5;
+padding-top: 0px;
+}
+
+#carousel {
+padding-top:20px;
+min-height: 550px;
+background-color :#FFFCF5;
 }
 
 .container {
@@ -95,10 +141,14 @@ width: 50%;
 
 .right {
 float:left;
-width: 50%;
+vertical-align: middle;
+width: 40%;
+padding:20px;
 }
 
-
+.center {
+  display: inline-block	
+}
 
 .carousel-items {
     display: flex;
@@ -110,6 +160,47 @@ width: 50%;
     margin-left: 1rem;
 }
 
+#realisateurs {
+min-height: 100;
+height: auto;
+background-color : #FFFFFF;
+text-align: left;
+margin-left: 100px;
+margin-right: 100px;
+border-bottom: ridge #ff5d0e;
+
+}
+
+#acteurs {
+min-height: 100%;
+background-color : #FFFFFF;
+height: auto;
+margin-left:100px;
+margin-right:100px;
+padding: 0 0 100px;
+text-align: left;
+}
+
+.feature {
+display:inline-flex;
+margin: 30px;
+padding: 30px;
+text-align: justify;
+width: 150px;
+}
+
+.caption {
+  width:200px;
+  text-align:center;
+  display:block;
+  background-color: transparent;
+  border: 1px solid transparent;
+  margin-right: 10px;
+  margin-bottom: 1px;
+  float:left;
+}
+}
+
 @media all and (min-width: 1025px){
 nav li {
 display: block;}
@@ -118,29 +209,92 @@ display: block;}
 
 @media all and (max-width: 1024px){
 
+
 	h1 {
-	margin-right: 25px;
-	margin-left: 25px;
+		width: auto;
+		margin-right: 15px;
+		margin-left: 25px;
 	}
 
 	header {
-	height : 100px;
+		width: auto;
+		height : 100px;
 	}
+
+	nav
+    {
+        width: auto;
+        height: auto;
+
+    }
 
 	nav li {
-	text-align: center;
-	font-size:20px;
-	display: block;
-	padding:10%;
-	height:25px;
+		width: auto;
+		text-align: left;
+		font-size:16px;
+		display: block;
+		padding:5%;
+		height:10px;
 	}
 
+nav ul{
+		flex-direction: column;
+	}
+}
 
-	footer {
-	height:120px;;
+@media all and (max-width: 700px){
+
+
+	h1 {
+		width: auto;
+		margin-right: 25px;
+		margin-left: 25px;
+	}
+
+	#bandeannonce {
+	min-height: 700px;
+	background-color : #FFFCF5;
+	}
+
+	header {
+		width: auto;
+		height : 100px;
+	}
+
+	nav
+    {
+        width: auto;
+        height: auto;
+    }
+
+	nav li {
+		width: auto;
+		text-align: left;
+		font-size:16px;
+		display: block;
+		padding:5%;
+		height:10px;
+	}
+
+	nav ul{
+		flex-direction: column;
 	}
 
 }
 
+@media all and (max-width: 525px){
 
+	#bandeannonce {
+	min-height: 900px;
+	background-color : #FFFCF5;
+	}
+	
 
+@media all and (max-width: 400px){
+
+	#bandeannonce {
+	min-height: 1400px;
+	background-color : #FFFCF5;
+	}
+
+}
