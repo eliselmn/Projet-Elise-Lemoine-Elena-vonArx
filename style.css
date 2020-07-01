@@ -10,6 +10,8 @@ body {
 h1 {
 	font-family: 'Black Ops One', cursive;
 	font-size: 40px;
+	padding:0px;
+    margin:0px;
 	text-align: center;
 	color: white;
 }
@@ -17,6 +19,8 @@ h1 {
 h2 {
 	font-family: 'Noto Sans TC', sans-serif;
 	font-size: 35px;
+	padding: 0px;
+    margin: 15px;
 	text-align: center;
 	color: #000000;
 }
@@ -54,12 +58,14 @@ header {
 nav li {
 float: left;
 font-size:25px;
+position: relative;
 display: inline-block;
 justify-content: center; 
 height:20px;
   }
 
 nav ul {
+ 	align-items: center;
 	margin: 0px;
 	padding: 0px;
 }
@@ -233,7 +239,6 @@ display: block;}
 		text-align: left;
 		font-size:16px;
 		display: block;
-		padding:5%;
 		height:10px;
 	}
 
@@ -246,6 +251,7 @@ nav ul{
 
 
 	h1 {
+		font-size: 26px;
 		width: auto;
 		margin-right: 25px;
 		margin-left: 25px;
@@ -261,23 +267,29 @@ nav ul{
 		height : 100px;
 	}
 
-	nav
-    {
-        width: auto;
-        height: auto;
-    }
-
-	nav li {
-		width: auto;
-		text-align: left;
-		font-size:16px;
-		display: block;
-		padding:5%;
-		height:10px;
-	}
 
 	nav ul{
 		flex-direction: column;
+	}
+
+	#realisateurs {
+		min-height: 100%;
+		height: auto;
+		background-color : #FFFFFF;
+		text-align: left;
+		margin-left: 0px;
+		margin-right: 0px;
+		border-bottom: ridge #ff5d0e;
+	}
+
+	#acteurs {
+		min-height: 100%;
+		background-color : #FFFFFF;
+		height: auto;
+		padding: 0 0 100px;
+		margin-left: 0px;
+		margin-right: 0px;
+		text-align: left;
 	}
 
 }
