@@ -5,6 +5,7 @@ body {
 	font-size: 14px;
 	margin: 0px;
 	padding: 0px;
+	background-color: #FFFCF5;
 }
 
 h1 {
@@ -114,20 +115,17 @@ text-decoration: none;
 
 .link-menu {
 color: #FFFFFF;
-hover color: #666666;
 text-decoration: none;
 }
 
 .menu {
 display: table;
 margin: 0 auto;
-padding-bottom: 0px;
 }
 
 #bandeannonce {
 min-height: 550px;
 background-color : #FFFCF5;
-padding-top: 0px;
 }
 
 #carousel {
@@ -169,7 +167,7 @@ padding:20px;
 #realisateurs {
 min-height: 100;
 height: auto;
-background-color : #FFFFFF;
+background-color: #FFFCF5;
 text-align: left;
 margin-left: 100px;
 margin-right: 100px;
@@ -179,7 +177,7 @@ border-bottom: ridge #ff5d0e;
 
 #acteurs {
 min-height: 100%;
-background-color : #FFFFFF;
+background-color: #FFFCF5;
 height: auto;
 margin-left:100px;
 margin-right:100px;
@@ -259,7 +257,7 @@ nav ul{
 
 	#bandeannonce {
 	min-height: 700px;
-	background-color : #FFFCF5;
+	background-color: #FFFCF5;
 	}
 
 	header {
@@ -275,7 +273,7 @@ nav ul{
 	#realisateurs {
 		min-height: 100%;
 		height: auto;
-		background-color : #FFFFFF;
+		background-color: #FFFCF5;
 		text-align: left;
 		margin-left: 0px;
 		margin-right: 0px;
@@ -284,7 +282,7 @@ nav ul{
 
 	#acteurs {
 		min-height: 100%;
-		background-color : #FFFFFF;
+		background-color: #FFFCF5;
 		height: auto;
 		padding: 0 0 100px;
 		margin-left: 0px;
@@ -298,8 +296,9 @@ nav ul{
 
 	#bandeannonce {
 	min-height: 900px;
-	background-color : #FFFCF5;
+	background-color: #FFFCF5;
 	}
+
 	
 
 @media all and (max-width: 400px){
